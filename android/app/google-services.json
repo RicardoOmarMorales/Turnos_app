@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "4217087063",
+    "project_id": "turnos-d5ab5",
+    "storage_bucket": "turnos-d5ab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4217087063:android:84ccb8455bf35e79c66f12",
+        "android_client_info": {
+          "package_name": "com.example.turnos_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy92grUdX-dvdT-mLd-uKW-qoll6OXQrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4217087063:android:9126173bc0c13fb0c66f12",
+        "android_client_info": {
+          "package_name": "com.turnosapp.turnosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy92grUdX-dvdT-mLd-uKW-qoll6OXQrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
