@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Sistema de Turnos'),
+          title: const Text(
+            'Sistema de Turnos',
+            style:
+                TextStyle(fontFamily: AutofillHints.addressCity, fontSize: 20),
+          ),
         ),
         body: const Login_Pacient(),
       ),

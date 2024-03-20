@@ -79,9 +79,7 @@ class _Login_PacientState extends State<Login_Pacient> {
                 height: 18.0,
               ),
               TextButton(
-                onPressed:() {
-                  NavigationBar
-                },
+                onPressed: null,
                 child: Text(
                   'Ingresar',
                   style: TextStyle(
