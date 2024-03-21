@@ -1,10 +1,11 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:turnos_app/screen/select_professional.dart';
 
 // ignore: camel_case_types
 class Login_Pacient extends StatefulWidget {
-  const Login_Pacient({super.key});
+  const Login_Pacient({Key? key}) : super(key: key);
 
   //String _user;
   //String _mail;
@@ -22,23 +23,23 @@ class _Login_PacientState extends State<Login_Pacient> {
       backgroundColor: Colors.blueGrey[100],
       body: ListView(
         padding: const EdgeInsets.symmetric(
-          horizontal: 40.0,
-          vertical: 60.0,
+          horizontal: 20.0,
+          vertical: 20.0,
         ),
-        children: const [
+        children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //Muestra la imagen dentro de un circulo.
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 100.0,
                 backgroundColor: Colors.blueGrey,
                 backgroundImage: AssetImage("images/DOCTORA.png"),
               ),
-              Divider(
+              const Divider(
                 height: 10.0,
               ), //muestra el cuadro de usuario
-              TextField(
+              const TextField(
                 enableInteractiveSelection: false,
                 autofocus: true,
                 textCapitalization: TextCapitalization.characters,
@@ -49,10 +50,10 @@ class _Login_PacientState extends State<Login_Pacient> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20.0)))),
               ),
-              Divider(
+              const Divider(
                 height: 10.0,
               ),
-              TextField(
+              const TextField(
                 enableInteractiveSelection: false,
                 textCapitalization: TextCapitalization.characters,
                 decoration: InputDecoration(
@@ -62,10 +63,10 @@ class _Login_PacientState extends State<Login_Pacient> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20.0)))),
               ),
-              Divider(
+              const Divider(
                 height: 10.0,
               ),
-              TextField(
+              const TextField(
                 enableInteractiveSelection: false,
                 obscureText: true,
                 decoration: InputDecoration(
@@ -75,15 +76,19 @@ class _Login_PacientState extends State<Login_Pacient> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20.0)))),
               ),
-              Divider(
+              const Divider(
                 height: 18.0,
               ),
-              TextButton(
-                onPressed: null,
-                child: Text(
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SelectProfessional()));
+                },
+                child: const Text(
                   'Ingresar',
-                  style: TextStyle(
-                      color: Colors.white, backgroundColor: Colors.blueAccent),
+                  style: TextStyle(color: Colors.blue),
                 ),
               ),
             ],
